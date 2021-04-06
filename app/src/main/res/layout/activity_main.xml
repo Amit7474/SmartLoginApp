@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RL_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <me.turkergoksu.lib.PercentageView
+            android:id="@+id/percentageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            app:animDuration="1500"
+            app:centerColor="#f7efe2"
+            app:percentageWidth="50"
+            app:progressBackgroundColor="#4d648d"
+            app:progressColor="#283655"
+            app:softness="true"
+            app:textColor="#283655"
+            app:textSize="42sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:inputType="numberPassword"
+            android:maxLength="9"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:hint="Enter the secret password" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Log In!"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</RelativeLayout>
